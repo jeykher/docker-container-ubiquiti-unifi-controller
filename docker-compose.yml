@@ -1,0 +1,10 @@
+version: '3'
+services:
+    ubiquiti-controller:
+        build: .
+        container_name: ubiquiti-controller
+        restart: unless-stopped
+        ports:
+            - "8081:8080"
+            - "8443:8443"
+        
